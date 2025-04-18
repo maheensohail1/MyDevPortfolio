@@ -181,3 +181,4 @@ export const BackgroundGradientAnimation = ({
     </div>
   );
 };
+export default BackgroundGradientAnimation; 
