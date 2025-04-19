@@ -18,11 +18,11 @@ const Approach = () => {
                     subtitle="Measure Twice, Cut Once"
                     icon={<AceternityIcon order="Phase 1" />}
                     description="Whether it’s a feature, bug fix, or refactor, I try to understand the why behind the task. I confirm the edge cases, user needs and the business impact. I split the work into smaller parts and then choose the right tools, libraries, or patterns to solve the problem cleanly"
-                    >
+                >
                     <CanvasRevealEffect
                         animationSpeed={5.1}
                         containerClassName="bg-emerald-900" />
-                    
+
                 </Card>
                 <Card
                     title="Build & Iterate"
@@ -71,10 +71,18 @@ const Card = ({
     description?: string
 }) => {
     const [hovered, setHovered] = React.useState(false);
+    const [canHover, setCanHover] = React.useState(true);
+
+    React.useEffect(() => {
+        if (typeof window !== 'undefined') {
+            setCanHover(window.matchMedia('(hover: hover)').matches);
+        }
+    }, []);
+
     return (
         <div
-            onMouseEnter={() => setHovered(true)}
-            onMouseLeave={() => setHovered(false)}
+            onMouseEnter={() => canHover && setHovered(true)}
+            onMouseLeave={() => canHover && setHovered(false)}
             className="border border-black/[0.2] group/canvas-card flex items-center justify-center dark:border-white/[0.2]  max-w-sm w-full mx-auto p-4 relative h-[30rem]"
         >
             <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
@@ -94,17 +102,17 @@ const Card = ({
                 )}
             </AnimatePresence>
 
-            <div className="relative z-20">
+            <div className="relative z-20 border border-white-100 rounded-3xl p-5 lg:border-0 lg:rounded-0 lg:p-0">
                 <div className="text-center group-hover/canvas-card:-translate-y-4 group-hover/canvas-card:opacity-0 transition duration-200 w-full  mx-auto flex items-center justify-center">
                     {icon}
                 </div>
-                <h2 className="dark:text-white text-center text-3xl opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-black mt-4  font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200">
+                <h2 className="dark:text-white text-center text-3xl opacity-100 lg:opacity-0 lg:group-hover/canvas-card:opacity-100 relative z-10 text-white mt-4  font-bold group-hover/canvas-card:text-white translate-y-0 lg:group-hover/canvas-card:-translate-y-2 transition duration-200">
                     {title}
                 </h2>
-                <h2 className="dark:text-white text-center text-md opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-black mt-1  font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200">
-                   <i> {subtitle}</i>
+                <h2 className="dark:text-white text-center text-md opacity-100 lg:opacity-0 lg:group-hover/canvas-card:opacity-100 relative z-10 text-white mt-4  font-bold group-hover/canvas-card:text-white translate-y-0 lg:group-hover/canvas-card:-translate-y-2 transition duration-200">
+                    <i> {subtitle}</i>
                 </h2>
-                <h2 className="text-sm text-center dark:text-white opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-black mt-4  font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200" style={{'color': '#e4ecff'}}>
+                <h2 className="text-sm text-center dark:text-white opacity-100 lg:opacity-0 lg:group-hover/canvas-card:opacity-100 relative z-10 text-white mt-4  font-bold group-hover/canvas-card:text-white translate-y-0 lg:group-hover/canvas-card:-translate-y-2 transition duration-200" style={{ 'color': '#e4ecff' }}>
                     {description}
                 </h2>
             </div>
