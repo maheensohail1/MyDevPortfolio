@@ -1,7 +1,7 @@
 'use client'
 
 import { cn } from "@/lib/utils";
-import BackgroundGradientAnimation from "@/components/ui/BackgroundGradientAnimationWrapper";
+//import BackgroundGradientAnimation from "@/components/ui/BackgroundGradientAnimationWrapper";
 import { Globe } from "./globe";
 import Lottie from "react-lottie";
 import { useState } from "react";
@@ -94,8 +94,8 @@ export const BentoGridItem = ({
                  )}
                 <div >
                     {id === 6 && (
-                        <BackgroundGradientAnimation>
-                        </BackgroundGradientAnimation>
+                        // <BackgroundGradientAnimation>
+                        // </BackgroundGradientAnimation>
                     )}
                 </div>
                
