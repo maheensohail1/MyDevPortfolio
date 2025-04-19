@@ -92,12 +92,12 @@ export const BentoGridItem = ({
                    
                 </div>
                  )}
-                <div >
+                {/* <div >
                     {id === 6 && (
-                        // <BackgroundGradientAnimation>
-                        // </BackgroundGradientAnimation>
+                        <BackgroundGradientAnimation>
+                        </BackgroundGradientAnimation>
                     )}
-                </div>
+                </div> */}
                
 
                 {/* title of card and description */}
