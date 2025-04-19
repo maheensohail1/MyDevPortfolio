@@ -9,19 +9,46 @@ import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import { navItems } from "@/data";
 
 export default function Home() {
-  return (
-    <main className="relative overflow-clip bg-black-100 flex justify-center items-center flex-col
-    mx-auto sm:px-10 px-5">
-      <div className="max-w-7xl w-full">
-        <FloatingNav navItems={navItems} />
-        <Hero />
-        <Grid />
-        <RecentProjects />
-        <Clients />
-        <Experience />
-        <Approach />
-        <Footer />
-      </div>
-    </main>
-  );
-}
+    console.log("Rendering Home Page");
+  
+    console.log("Rendering FloatingNav");
+    const nav = <FloatingNav navItems={navItems} />;
+  
+    console.log("Rendering Hero");
+    const hero = <Hero />;
+  
+    console.log("Rendering Grid");
+    const grid = <Grid />;
+  
+    console.log("Rendering RecentProjects");
+    const recentProjects = <RecentProjects />;
+  
+    console.log("Rendering Clients");
+    const clients = <Clients />;
+  
+    console.log("Rendering Experience");
+    const experience = <Experience />;
+  
+    console.log("Rendering Approach");
+    const approach = <Approach />;
+  
+    console.log("Rendering Footer");
+    const footer = <Footer />;
+  
+    return (
+      <main className="relative overflow-clip bg-black-100 flex justify-center items-center flex-col mx-auto sm:px-10 px-5">
+        <div className="max-w-7xl w-full">
+          {nav}
+          {hero}
+          {grid}
+          {recentProjects}
+          {clients}
+          {experience}
+          {approach}
+          {footer}
+        </div>
+      </main>
+    );
+  }
+  
+
