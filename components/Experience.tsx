@@ -4,7 +4,7 @@ import { Button } from './ui/MovingBorder'
 
 const Experience = () => {
     return (
-        <div className='py-20' id='testimonials'>
+        <div className='py-20' id='experience'>
             <h1 className='text-center text-white text-[40px] md:text-5xl lg:text-5xl'>
 
                 My {' '}

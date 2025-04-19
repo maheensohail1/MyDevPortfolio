@@ -6,7 +6,7 @@ import { AnimatePresence, motion } from 'motion/react';
 
 const Approach = () => {
     return (
-        <section className='w-full py-20 '>
+        <section className='w-full py-20 ' id='approach'>
             <h1 className='text-center text-white text-[40px] md:text-5xl lg:text-5xl'>
 
                 My {' '}
@@ -14,9 +14,10 @@ const Approach = () => {
             </h1>
             <div className='my-20 flex flex-col lg:flex-row items-center justify-center gap-4'>
                 <Card
-                    title="Planning and Strategy"
+                    title="Understand & Plan"
+                    subtitle="Measure Twice, Cut Once"
                     icon={<AceternityIcon order="Phase 1" />}
-                    description="We'll collaborate to map out your websites's goals, target audience, and key functionalities. We'll discuss things like site structure, navigation and content requirements."
+                    description="Whether it’s a feature, bug fix, or refactor, I try to understand the why behind the task. I confirm the edge cases, user needs and the business impact. I split the work into smaller parts and then choose the right tools, libraries, or patterns to solve the problem cleanly"
                     >
                     <CanvasRevealEffect
                         animationSpeed={5.1}
@@ -24,9 +25,10 @@ const Approach = () => {
                     
                 </Card>
                 <Card
-                    title="Development & Progress Update"
+                    title="Build & Iterate"
+                    subtitle="Build smart. Build small. Test often."
                     icon={<AceternityIcon order="Phase 2" />}
-                    description="Once we agree on the plan, I cue my lofi playlist and dive into coding. From initial sketches to polished code, I keep you updated every step of the way.">
+                    description="While building, I keep things clean and simple. I make sure the UI works smoothly across devices, performance stays solid, and the code’s easy to follow. I test as I go to catch bugs early and save time later.">
                     <CanvasRevealEffect
                         animationSpeed={3}
                         containerClassName="bg-purple-900"
@@ -39,9 +41,11 @@ const Approach = () => {
                     <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-purple/50 dark:bg-purple/90" />
                 </Card>
                 <Card
-                    title="Development & Launch"
+                    title="Polish & Deliver"
+                    subtitle="Code with Purpose. Ship with Care."
                     icon={<AceternityIcon order="Phase 3" />}
-                    description="This is where the magic happens! Based on the approved design, I'll translate everything into functional code, building your application form the ground up.">
+                    description="This is where the fun details come in—nice transitions, good loading states, and all the small touches that make it feel complete. I double-check everything, get quick feedback, and ship with confidence.
+">
                     <CanvasRevealEffect
                         animationSpeed={3}
                         containerClassName="bg-sky-600"
@@ -55,11 +59,13 @@ const Approach = () => {
 
 const Card = ({
     title,
+    subtitle,
     icon,
     children,
     description
 }: {
     title: string;
+    subtitle: string;
     icon: React.ReactNode;
     children?: React.ReactNode;
     description?: string
@@ -94,6 +100,9 @@ const Card = ({
                 </div>
                 <h2 className="dark:text-white text-center text-3xl opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-black mt-4  font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200">
                     {title}
+                </h2>
+                <h2 className="dark:text-white text-center text-md opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-black mt-1  font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200">
+                   <i> {subtitle}</i>
                 </h2>
                 <h2 className="text-sm text-center dark:text-white opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-black mt-4  font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200" style={{'color': '#e4ecff'}}>
                     {description}

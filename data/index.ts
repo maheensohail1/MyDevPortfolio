@@ -2,6 +2,8 @@ export const navItems = [
     { name: "About", link: "#about" },
     { name: "Projects", link: "#projects" },
     { name: "Testimonials", link: "#testimonials" },
+    { name: "Experience", link: "#experience" },
+    { name: "Approach", link: "#approach" },
     { name: "Contact", link: "#contact" },
   ];
   
@@ -107,97 +109,91 @@ export const navItems = [
   export const testimonials = [
     {
       quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael J",
-      title: "Director of AlphaStream Technologies",
+        "One of Maheen’s strengths is her adaptability. Whether learning new technologies, resolving unexpected challenges under tight deadlines, or supporting junior developers, she does it all with a calm, thoughtful mindset. She doesn’t just complete tasks—she improves the workflow and adds value beyond her responsibilities. Her contributions have led to improved performance, more maintainable codebases, and enhanced user experience in our projects.",
+      name: "Shahbaz Ahmad Khan",
+      title: "Development Team Lead at Malomatia",
     },
     {
       quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Jo",
-      title: "Director of AlphaStream Technologies",
+        "Working with Maheen is a game-changer. She’s not just focused on the ‘how’ but really digs into the ‘why’ behind every task. She’s proactive, asks the right questions, and always thinks about the end user. Her solutions consistently hit the mark—both technically and from a business standpoint.",
+      name: "Muskan Amjad",
+      title: "Senior Business Analyst at Systems Limited",
     },
     {
       quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+        "Collaborating with Maheen was an absolute pleasure. Her professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Maheen's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Maheen is the ideal partner.",
       name: "Michael Joh",
       title: "Director of AlphaStream Technologies",
     },
-    {
-      quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael John",
-      title: "Director of AlphaStream Technologies",
-    },
-    {
-      quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
-    },
+    
   ];
   
   export const companies = [
     {
       id: 1,
-      name: "cloudinary",
-      img: "/cloud.svg",
-      nameImg: "/cloudName.svg",
+      name: "aklogiks",
+      nameImg: "/akl2.png",
     },
     {
       id: 2,
-      name: "appwrite",
-      img: "/app.svg",
-      nameImg: "/appName.svg",
+      name: "systems",
+      nameImg: "/systemslogo.png",
     },
     {
       id: 3,
-      name: "HOSTINGER",
-      img: "/host.svg",
-      nameImg: "/hostName.svg",
+      name: "techlogix",
+      nameImg: "/techxlogo1.png",
     },
     {
       id: 4,
-      name: "stream",
-      img: "/s.svg",
-      nameImg: "/streamName.svg",
-    },
-    {
-      id: 5,
-      name: "docker.",
-      img: "/dock.svg",
-      nameImg: "/dockerName.svg",
-    },
+      name: "hbl",
+      nameImg: "/hbl.png",
+    }
+    
   ];
   
   export const workExperience = [
     {
       id: 1,
-      title: "Frontend Engineer Intern",
-      desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+      title: "Senior Developer - AK Logiks",
+      desc: "Engineered high-performance, data-driven web applications using modern technologies, enhancing UI responsiveness and reducing load times by 40%",
       className: "md:col-span-2",
       thumbnail: "/exp1.svg",
     },
     {
       id: 2,
-      title: "Mobile App Dev - JSM Tech",
-      desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+      title: "Frontend Developer - Systems Limited",
+      desc: "Led the development of scalable UI components used across multiple enterprise applications, ensuring 100% design consistency and 30% faster development cycles",
       className: "md:col-span-2", // change to md:col-span-2
       thumbnail: "/exp2.svg",
     },
     {
       id: 3,
-      title: "Freelance App Dev Project",
-      desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+      title: "Junior Developer - Systems Limited",
+      desc: "Honored as ‘Star of the Quarter’ for delivering exceptional impact in frontend performance, UX enhancements, and cross-functional team collaboration, solidifying reputation as a key contributor",
       className: "md:col-span-2", // change to md:col-span-2
       thumbnail: "/exp3.svg",
     },
     {
       id: 4,
-      title: "Lead Frontend Developer",
-      desc: "Developed and maintained user-facing features using modern frontend technologies.",
+      title: "Associate Developer - Systems Limited",
+      desc: "Bridged the gap between frontend and backend teams, ensuring seamless API integration and intuitive, userfriendly interfaces that enhanced usability",
       className: "md:col-span-2",
       thumbnail: "/exp4.svg",
+    },
+    {
+      id: 5,
+      title: "SQA Engineer - Techlogix",
+      desc: "Actively contributed to Agile workflows (Scrum), optimizing sprint planning and issue resolution cycles",
+      className: "md:col-span-2",
+      thumbnail: "/exp2.svg",
+    },
+    {
+      id: 6,
+      title: "QA Intern - HBL",
+      desc: "Identified and helped resolve over 50 critical bugs, improving application stability and user experience",
+      className: "md:col-span-2",
+      thumbnail: "/exp3.svg",
     },
   ];
   
