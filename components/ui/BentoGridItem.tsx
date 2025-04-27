@@ -60,7 +60,7 @@ export const BentoGridItem = ({
                         <img
                             src={img}
                             alt={img}
-                            className={cn(imgClassName, 'w-full h-full object-cover object-center rounded-2xl')}
+                            className={cn(imgClassName, `w-full h-full object-cover object-center rounded-2xl ${id ===5 && 'opacity-50'}`)}
                         />
                     )}
                 </div>
@@ -83,18 +83,20 @@ export const BentoGridItem = ({
                
 
                 {/* title of card and description */}
-                <div className={`z-10 relative p-1 ${id === 1 && 'mt-[15rem] mr-[6rem]'} ${id ===3 && 'mr-[13rem]'} ${id ===6 && 'p-2'}`}
+                <div className={`z-10 relative p-1 ${id === 1 && 'mt-[15rem] mr-[6rem]'} ${id ===6 && 'p-2'}`}
                 >
+                    <div className="flex-1">
                     <div className="font-sans font-extralight text-[#c1c2d3] text-sm md:text-xs lg:text-base z-10 ">
                         {description}
                     </div>
                     <div className="font-sans font-bold text-lg lg:text-3xl max-w-96 z-10">
                     {title}
                     </div>
+                    </div>
                 </div>
 
                 {id === 3 && (
-                    <div className="flex gap-1 lg:gap-5 w-fit absolute -right-2 lg:-right-2">
+                    <div className="flex gap-1 lg:gap-5 justify-end w-fit inset-0 p-2">
 
                         {/* 2 columns of my skills */}
                         {/* column 1 */}
@@ -110,7 +112,7 @@ export const BentoGridItem = ({
                         </div>
                         {/* column 2 */}
                         <div className="flex flex-col gap-0 md:gap-6 lg:gap-8 mt-3">
-                            {['React.js', 'Next.js', 'Node.js'].map(
+                            {['Vue.js', 'Next.js', 'React.js'].map(
                                 (item) => (
                                     <span key={item} className="py-2 lg:py-4 lg:px-3 px-3 text-sm lg:test-base opacity-50 
                                     lg:opacity-100 rounded-lg text-center bg-[#10132E]">
@@ -124,7 +126,7 @@ export const BentoGridItem = ({
 
                 {id === 6 && (
                     <div className="mt-5 relative p-2">
-                        <div className={`absolute -bottom-5 right-0 h-auto`}>
+                        <div className='absolute -bottom-5 right-0 h-auto'>
                             <Lottie options={{
                                 loop: copied,
                                 autoplay: copied,
@@ -135,7 +137,7 @@ export const BentoGridItem = ({
                             }} />
                         </div>
                         <MagicButton
-                            title={copied? 'Email Copied': 'Copy my Email'}
+                            title={copied? 'Email Copied': 'Copy Email'}
                             icon= {<IoCopyOutline />}
                             position="left"
                             otherClasses="!bg-[#161a31"

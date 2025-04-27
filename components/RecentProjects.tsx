@@ -9,7 +9,7 @@ const RecentProjects = () => {
         <h1 className='text-center text-white text-[40px] md:text-5xl lg:text-5xl'>
 
             A small selection of {' '}
-            <span className='text-purple'> recent projects</span>
+            <span className='text-purple'> personal projects</span>
         </h1>
 
         <div className='flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 mt-10'>
@@ -40,7 +40,8 @@ const RecentProjects = () => {
                             </div>
 
                             <div className='flex justify-center items-center'>
-                                <p className='flex lg:text-xl md:text-xs text-sm text-purple'> Check Live Site</p>
+                               {(id == 1 || id ===3) && <p className='flex lg:text-xl md:text-xs text-sm text-purple'> Check Live Site</p> }
+                               {id == 2 && <p className='flex lg:text-xl md:text-xs text-sm text-purple'> Check Github Link</p> }
                                 <FaLocationArrow className='ms-3' color='#CBACF9' ></FaLocationArrow>
                             </div>
                         </div>

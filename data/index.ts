@@ -51,7 +51,7 @@ export const navItems = [
   
     {
       id: 5,
-      title: "Currently building a JS Animation library",
+      title: "Currently building a Vue based Car booking application",
       description: "The Inside Scoop",
       className: "md:col-span-3 md:row-span-2",
       imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -81,13 +81,21 @@ export const navItems = [
       link: "https://lyra-gemini-ai.vercel.app/",
     },
     {
-      id: 2,
-      title: "Yoom - Video Conferencing App",
-      des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-      img: "/p2.svg",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-      link: "https://github.com/adrianhajdin/zoom-clone",
+      id: 3,
+      title: "WorkWise - Empowering Your Career Journey",
+      des: "A Vue.js based platform to explore a wide range of job opportunities and take the next step in your career. Find the perfect match for your skills and passion today",
+      img: "/workwise.jpg",
+      iconLists: ["/vuejs.png", "vite.png", "/tail.svg", "/firebase.png",  "/js.png"],
+      link: "https://work-wise-nine.vercel.app/",
     },
+    // {
+    //   id: 2,
+    //   title: "BookAuto - Auto booking made effortless",
+    //   des: "BookAuto is a Vue.js based modern car booking platform designed for speed, simplicity, and reliability. Whether you're commuting, planning a trip, or just need a ride, BookAuto connects you with the perfect car in seconds. With real-time availability, seamless payments, and a user-friendly interface, booking your next ride has never been easier",
+    //   img: "/bookAuto.jpg",
+    //   iconLists: ["/vuejs.png", "vite.png", "/tail.svg", "/js.png"],
+    //   link: "https://github.com/maheensohail1/BookAuto",
+    // },
     
   ];
   
@@ -103,12 +111,6 @@ export const navItems = [
         "Working with Maheen is a game-changer. She’s not just focused on the ‘how’ but really digs into the ‘why’ behind every task. She’s proactive, asks the right questions, and always thinks about the end user. Her solutions consistently hit the mark—both technically and from a business standpoint.",
       name: "Muskan Amjad",
       title: "Senior Business Analyst at Systems Limited",
-    },
-    {
-      quote:
-        "Collaborating with Maheen was an absolute pleasure. Her professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Maheen's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Maheen is the ideal partner.",
-      name: "Michael Joh",
-      title: "Director of AlphaStream Technologies",
     },
     
   ];
@@ -138,13 +140,13 @@ export const navItems = [
   ];
   
   export const workExperience = [
-    {
-      id: 1,
-      title: "Senior Developer - AK Logiks",
-      desc: "Engineered high-performance, data-driven web applications using modern technologies, enhancing UI responsiveness and reducing load times by 40%",
-      className: "md:col-span-2",
-      thumbnail: "/exp1.svg",
-    },
+    // {
+    //   id: 1,
+    //   title: "Senior Developer - AK Logiks",
+    //   desc: "Engineered high-performance, data-driven web applications using modern technologies, enhancing UI responsiveness and reducing load times by 40%",
+    //   className: "md:col-span-2",
+    //   thumbnail: "/exp1.svg",
+    // },
     {
       id: 2,
       title: "Frontend Developer - Systems Limited",
@@ -154,14 +156,14 @@ export const navItems = [
     },
     {
       id: 3,
-      title: "Junior Developer - Systems Limited",
+      title: "Junior Frontend Developer - Systems Limited",
       desc: "Honored as ‘Star of the Quarter’ for delivering exceptional impact in frontend performance, UX enhancements, and cross-functional team collaboration, solidifying reputation as a key contributor",
       className: "md:col-span-2", // change to md:col-span-2
       thumbnail: "/exp3.svg",
     },
     {
       id: 4,
-      title: "Associate Developer - Systems Limited",
+      title: "Associate Frontend Developer - Systems Limited",
       desc: "Bridged the gap between frontend and backend teams, ensuring seamless API integration and intuitive, userfriendly interfaces that enhanced usability",
       className: "md:col-span-2",
       thumbnail: "/exp4.svg",
@@ -173,26 +175,24 @@ export const navItems = [
       className: "md:col-span-2",
       thumbnail: "/exp2.svg",
     },
-    {
-      id: 6,
-      title: "QA Intern - HBL",
-      desc: "Identified and helped resolve over 50 critical bugs, improving application stability and user experience",
-      className: "md:col-span-2",
-      thumbnail: "/exp3.svg",
-    },
+    // {
+    //   id: 6,
+    //   title: "QA Intern - HBL",
+    //   desc: "Identified and helped resolve over 50 critical bugs, improving application stability and user experience",
+    //   className: "md:col-span-2",
+    //   thumbnail: "/exp3.svg",
+    // },
   ];
   
   export const socialMedia = [
     {
       id: 1,
       img: "/git.svg",
+      link: "https://github.com/maheensohail1"
     },
     {
       id: 2,
-      img: "/twit.svg",
-    },
-    {
-      id: 3,
       img: "/link.svg",
+      link: "https://www.linkedin.com/in/maheen-sohail"
     },
   ];
